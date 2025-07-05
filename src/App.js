@@ -253,27 +253,6 @@ function App() {
             </div>
           </div>
         </div>
-        <div className='mt-6 flex space-x-3 justify-center'>
-          <div className='space-y-4 max-w-[500px]'>
-            <div className='text-[15px] p-4 space-y-3 bg-neutral-800 rounded-[16px] border border-neutral-600'>
-              <p className='text-[20px] font-medium text-black bg-bgreen w-[30px] h-[30px] rounded-[8px] flex items-center justify-center'>1</p>
-              <p className='text-[23px] font-medium text-bgreen'>Análise</p>
-              <p>Após a confirmação do pagamento, você receberá um formulário detalhado onde irá descrever sua rotina, nível de treinamento, preferências alimentares, horários disponíveis, lesões e fotos do seu físico atual.</p>
-            </div>
-
-            <div className='text-[15px] p-4 space-y-3 bg-neutral-800 rounded-[16px] border border-neutral-600'>
-              <p className='text-[20px] font-medium text-black bg-bgreen w-[30px] h-[30px] rounded-[8px] flex items-center justify-center'>2</p>
-              <p className='text-[23px] font-medium text-bgreen leading-[29px]'>Montagem do seu plano</p>
-              <p>Com base nas informações recebidas, seu plano será estruturado do zero. Você receberá seu protocolo de dieta e treino em até 5 dias úteis.</p>
-            </div>
-
-            <div className='text-[15px] p-4 space-y-3 bg-neutral-800 rounded-[16px] border border-neutral-600'>
-              <p className='text-[20px] font-medium text-black bg-bgreen w-[30px] h-[30px] rounded-[8px] flex items-center justify-center'>3</p>
-              <p className='text-[23px] font-medium text-bgreen'>Acompanhamento</p>
-              <p>Toda semana seu plano será avaliado. Ajustes serão feitos conforme necessidade: seja por uma demanda sua (dificuldade de seguir, mudança de rotina etc.) ou por uma estratégia minha para acelerar seus resultados.</p>
-            </div>
-          </div>
-        </div>
       </div>
 
       <div className='p-7 xl:py-10 bg-neutral-900 text-white mt-6'>

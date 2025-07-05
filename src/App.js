@@ -64,7 +64,7 @@ function App() {
         <div>
           <p className='text-[26px] font-medium text-center'>Essa é para você que…</p>
           <div className='flex justify-center max-w-[600px] mx-auto'>
-            <div className='mt-5 space-y-4 border border-neutral-700 p-4 rounded-[16px]'>
+            <div className='mt-5 space-y-4 border border-neutral-700 p-4 rounded-[16px] text-neutral-300'>
               <div className='flex items-center space-x-2'>
                 <span className='material-symbols-outlined text-[35px] text-verde'>check</span>
                 <p className='leading-[20px]'>Quer emagrecer ou definir <span className='font-regular text-bgreen'>sem passar fome</span> ou ganhar massa muscular <span className='font-regular text-bgreen'>sem comer demais.</span></p>
@@ -236,19 +236,19 @@ function App() {
               <div className='text-[15px] p-4 space-y-3 bg-neutral-800 rounded-[16px] border border-neutral-600'>
                 <p className='text-[20px] font-medium text-black bg-bgreen w-[30px] h-[30px] rounded-[8px] flex items-center justify-center'>1</p>
                 <p className='text-[23px] font-medium text-bgreen'>Análise</p>
-                <p>Após a confirmação do pagamento, você receberá um formulário detalhado onde irá descrever sua rotina, nível de treinamento, preferências alimentares, horários disponíveis, lesões e fotos do seu físico atual.</p>
+                <p className='text-neutral-300'>Após a confirmação do pagamento, você receberá um formulário detalhado onde irá descrever sua rotina, nível de treinamento, preferências alimentares, horários disponíveis, lesões e fotos do seu físico atual.</p>
               </div>
 
               <div className='text-[15px] p-4 space-y-3 bg-neutral-800 rounded-[16px] border border-neutral-600'>
                 <p className='text-[20px] font-medium text-black bg-bgreen w-[30px] h-[30px] rounded-[8px] flex items-center justify-center'>2</p>
                 <p className='text-[23px] font-medium text-bgreen leading-[29px]'>Montagem do seu plano</p>
-                <p>Com base nas informações recebidas, seu plano será estruturado do zero. Você receberá seu protocolo de dieta e treino em até 5 dias úteis.</p>
+                <p className='text-neutral-300'>Com base nas informações recebidas, seu plano será estruturado do zero. Você receberá seu protocolo de dieta e treino em até 5 dias úteis.</p>
               </div>
 
               <div className='text-[15px] p-4 space-y-3 bg-neutral-800 rounded-[16px] border border-neutral-600'>
                 <p className='text-[20px] font-medium text-black bg-bgreen w-[30px] h-[30px] rounded-[8px] flex items-center justify-center'>3</p>
                 <p className='text-[23px] font-medium text-bgreen'>Acompanhamento</p>
-                <p>Toda semana seu plano será avaliado. Ajustes serão feitos conforme necessidade: seja por uma demanda sua (dificuldade de seguir, mudança de rotina etc.) ou por uma estratégia minha para acelerar seus resultados.</p>
+                <p className='text-neutral-300'>Toda semana seu plano será avaliado. Ajustes serão feitos conforme necessidade: seja por uma demanda sua (dificuldade de seguir, mudança de rotina etc.) ou por uma estratégia minha para acelerar seus resultados.</p>
               </div>
             </div>
           </div>
@@ -257,9 +257,18 @@ function App() {
         <div>
           <p className='text-[26px] font-medium text-center'>Planos disponíveis</p>
           <div className='space-y-4 mt-6 lg:flex lg:space-x-4 lg:justify-center lg:space-y-0'>
-            <div className='border-2 border-neutral-700 rounded-[16px] text-center pb-4 overflow-hidden lg:w-[370px] max-w-[470px] mx-auto lg:mx-0'>
-              <p className='text-[21px] bg-neutral-700 p-2 font-regular text-bgreen'>Trimestral</p>
-              <div className='space-y-2 p-3'>
+            <div className='border p-2 border-bgreen bg-neutral-800 rounded-[16px] text-center overflow-hidden lg:w-[370px] max-w-[470px] mx-auto lg:mx-0'>
+              <div className='bg-bgreen rounded-[8px] p-2 space-y-2'>
+                <div className='flex justify-between text-black'>
+                  <p className='text-[21px] font-medium pl-1'>Trimestral</p>
+                  <p className='bg-neutral-700 text-white rounded-[6px] font-regular flex justify-center items-center h-[26px] px-2 text-[11px]'>Mais vendido</p>
+                </div>
+                <p className='font-medium text-[27px] text-black text-left ml-1'>R$129,99 <span className='text-[17px] text-neutral-800 font-regular'>/mês</span></p>
+                <div className='text-center pt-3'>
+                  <button className='buttonHover font-medium bg-neutral-600 p-3 w-full rounded-[6px] text-[18px]'>Quero esse plano</button>
+                </div>
+              </div>
+              <div className='space-y-2 p-3 text-neutral-300'>
                 <div className='flex items-center space-x-2'>
                   <span className='material-symbols-outlined text-[28px] text-verde'>check</span>
                   <p className='leading-[20px]'>Dieta personalizada</p>
@@ -284,16 +293,20 @@ function App() {
                   <span className='material-symbols-outlined text-[28px] text-red-500'>close</span>
                   <p className='leading-[20px]'>Teste</p>
                 </div>
-                <hr className='border-1 border-neutral-700' />
-                <p className='font-medium text-[27px] pt-2'>R$299,99</p>
               </div>
-              <div className='text-center px-3 mt-1'>
-                <button className='buttonHover font-medium bg-verde p-3 w-full rounded-[8px] text-black text-[18px]'>Quero o plano trimestral</button>
-              </div>
+
             </div>
-            <div className='border-2 border-neutral-700 rounded-[16px] text-center pb-4 overflow-hidden lg:w-[370px] max-w-[470px] mx-auto lg:mx-0'>
-              <p className='text-[21px] bg-neutral-700 p-2 font-regular text-bgreen'>Semestral</p>
-              <div className='space-y-2 p-3'>
+            <div className='p-2 bg-neutral-800 rounded-[16px] text-center overflow-hidden lg:w-[370px] max-w-[470px] mx-auto lg:mx-0'>
+              <div className='bg-neutral-700 rounded-[8px] p-2 space-y-2'>
+                <div className='flex justify-between'>
+                  <p className='text-[21px] font-medium pl-1'>Semestral</p>
+                </div>
+                <p className='font-medium text-[27px] text-left ml-1'>R$107,99 <span className='text-[17px] font-regular text-neutral-300'>/mês</span></p>
+                <div className='text-center pt-3'>
+                  <button className='buttonHover font-medium bg-bgreen text-black p-3 w-full rounded-[6px] text-[18px]'>Quero esse plano</button>
+                </div>
+              </div>
+              <div className='space-y-2 p-3 text-neutral-300'>
                 <div className='flex items-center space-x-2'>
                   <span className='material-symbols-outlined text-[28px] text-verde'>check</span>
                   <p className='leading-[20px]'>Dieta personalizada</p>
@@ -318,16 +331,20 @@ function App() {
                   <span className='material-symbols-outlined text-[28px] text-red-500'>close</span>
                   <p className='leading-[20px]'>Teste</p>
                 </div>
-                <hr className='border-1 border-neutral-700' />
-                <p className='font-medium text-[27px] pt-2'>R$299,99</p>
               </div>
-              <div className='text-center px-3 mt-1'>
-                <button className='buttonHover font-medium bg-verde p-3 w-full rounded-[8px] text-black text-[18px]'>Quero o plano semestral</button>
-              </div>
+
             </div>
-            <div className='border-2 border-neutral-700 rounded-[16px] text-center pb-4 overflow-hidden lg:w-[370px] max-w-[470px] mx-auto lg:mx-0'>
-              <p className='text-[21px] bg-neutral-700 p-2 font-regular text-bgreen'>Anual</p>
-              <div className='space-y-2 p-3'>
+            <div className='p-2 bg-neutral-800 rounded-[16px] text-center overflow-hidden lg:w-[370px] max-w-[470px] mx-auto lg:mx-0'>
+              <div className='bg-neutral-700 rounded-[8px] p-2 space-y-2'>
+                <div className='flex justify-between'>
+                  <p className='text-[21px] font-medium pl-1'>Anual</p>
+                </div>
+                <p className='font-medium text-[27px] text-left ml-1'>R$95,99 <span className='text-[17px] font-regular text-neutral-300'>/mês</span></p>
+                <div className='text-center pt-3'>
+                  <button className='buttonHover font-medium bg-bgreen text-black p-3 w-full rounded-[6px] text-[18px]'>Quero esse plano</button>
+                </div>
+              </div>
+              <div className='space-y-2 p-3 text-neutral-200'>
                 <div className='flex items-center space-x-2'>
                   <span className='material-symbols-outlined text-[28px] text-verde'>check</span>
                   <p className='leading-[20px]'>Dieta personalizada</p>
@@ -352,11 +369,6 @@ function App() {
                   <span className='material-symbols-outlined text-[28px] text-verde'>check</span>
                   <p className='leading-[20px]'>Teste</p>
                 </div>
-                <hr className='border-1 border-neutral-700' />
-                <p className='font-medium text-[27px] pt-2'>R$299,99</p>
-              </div>
-              <div className='text-center px-3 mt-1'>
-                <button className='buttonHover font-medium bg-verde p-3 w-full rounded-[8px] text-black text-[18px]'>Quero o plano anual</button>
               </div>
             </div>
           </div>
@@ -377,10 +389,10 @@ function App() {
                   <p className='text-[22px]'>Meu nome é</p>
                   <p className='text-[28px] text-bgreen font-bold'>BRUNO DUARTE</p>
                 </div>
-                <div className='mt-7 space-y-5'>
+                <div className='mt-7 space-y-5 text-neutral-300'>
                   <p>Sou Personal Trainer  com mais de <span className='text-bgreen font-psemibold'>15 anos de experiência</span>, ajudando centenas de mulheres a conquistarem o corpo dos seus sonhos com saúde, foco e disciplina.</p>
                   <p>Graduado em Educação Física e especialista em musculação, emagrecimento e alta performance, meu compromisso é transformar resultados em estilo de vida.</p>
-                  <p>Já acompanhei centenas de pessoas, mesmo com rotinas apertadas, e vi de perto o poder da consistência com o <span className='font-psemibold'>acompanhamento certo.</span></p>
+                  <p>Já acompanhei centenas de pessoas, mesmo com rotinas apertadas, e vi de perto o poder da consistência com o <span className='font-psemibold text-white'>acompanhamento certo.</span></p>
                 </div>
                 <div className='flex space-x-3 mt-7 pb-5'>
                   <img src='./imagens/instagram.png' className='buttonHover w-[40px]' />

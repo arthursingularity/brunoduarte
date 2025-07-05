@@ -130,8 +130,8 @@ function App() {
               </div>
 
               <div className='flex justify-center space-x-3 mt-4'>
-                <div className='w-full'>
-                  <div className='relative w-full h-auto max-h-[460px] bg-neutral-500 rounded-t-[6px] overflow-hidden flex justify-center items-center'>
+                <div className='w-full border border-neutral-500 rounded-[6px] relative overflow-hidden'>
+                  <div className='relative w-full h-auto max-h-[460px] bg-neutral-500 overflow-hidden flex justify-center items-center'>
                     <img
                       src='./imagens/logo.png'
                       className='absolute w-10 right-[2px] bottom-[2px] z-10'
@@ -143,10 +143,10 @@ function App() {
                       alt='Antes'
                     />
                   </div>
-                  <p className='bg-neutral-500 p-1 text-center rounded-b-[6px]'>Antes</p>
+                  <p className='bg-neutral-500 p-1 py-1.5 text-center font-medium text-[15px]'>Antes</p>
                 </div>
 
-                <div className='w-full'>
+                <div className='w-full border border-neutral-500 rounded-[6px] relative overflow-hidden'>
                   <div className='relative w-full h-auto max-h-[460px] bg-neutral-500 rounded-t-[6px] overflow-hidden flex justify-center items-center'>
                     <img
                       src='./imagens/logo.png'
@@ -159,7 +159,7 @@ function App() {
                       alt='Depois'
                     />
                   </div>
-                  <p className='bg-neutral-500 p-1 text-center rounded-b-[6px]'>Depois</p>
+                  <p className='bg-neutral-500 p-1 py-1.5 text-center font-medium text-[15px]'>Depois</p>
                 </div>
               </div>
             </div>

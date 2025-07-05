@@ -229,6 +229,30 @@ function App() {
           </div>
         </div>
 
+        <div>
+          <p className='text-[28px] font-medium text-center'>Como funciona?</p>
+          <div className='mt-6 flex space-x-3 justify-center'>
+            <div className='space-y-4 max-w-[500px]'>
+              <div className='text-[15px] p-4 space-y-3 bg-neutral-800 rounded-[16px] border border-neutral-600'>
+                <p className='text-[20px] font-medium text-black bg-bgreen w-[30px] h-[30px] rounded-[8px] flex items-center justify-center'>1</p>
+                <p className='text-[23px] font-medium text-bgreen'>Análise</p>
+                <p>Após a confirmação do pagamento, você receberá um formulário detalhado onde irá descrever sua rotina, nível de treinamento, preferências alimentares, horários disponíveis, lesões e fotos do seu físico atual.</p>
+              </div>
+
+              <div className='text-[15px] p-4 space-y-3 bg-neutral-800 rounded-[16px] border border-neutral-600'>
+                <p className='text-[20px] font-medium text-black bg-bgreen w-[30px] h-[30px] rounded-[8px] flex items-center justify-center'>2</p>
+                <p className='text-[23px] font-medium text-bgreen leading-[29px]'>Montagem do seu plano</p>
+                <p>Com base nas informações recebidas, seu plano será estruturado do zero. Você receberá seu protocolo de dieta e treino em até 5 dias úteis.</p>
+              </div>
+
+              <div className='text-[15px] p-4 space-y-3 bg-neutral-800 rounded-[16px] border border-neutral-600'>
+                <p className='text-[20px] font-medium text-black bg-bgreen w-[30px] h-[30px] rounded-[8px] flex items-center justify-center'>3</p>
+                <p className='text-[23px] font-medium text-bgreen'>Acompanhamento</p>
+                <p>Toda semana seu plano será avaliado. Ajustes serão feitos conforme necessidade: seja por uma demanda sua (dificuldade de seguir, mudança de rotina etc.) ou por uma estratégia minha para acelerar seus resultados.</p>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className='mt-6 flex space-x-3 justify-center'>
           <div className='space-y-4 max-w-[500px]'>
             <div className='text-[15px] p-4 space-y-3 bg-neutral-800 rounded-[16px] border border-neutral-600'>
@@ -247,115 +271,6 @@ function App() {
               <p className='text-[20px] font-medium text-black bg-bgreen w-[30px] h-[30px] rounded-[8px] flex items-center justify-center'>3</p>
               <p className='text-[23px] font-medium text-bgreen'>Acompanhamento</p>
               <p>Toda semana seu plano será avaliado. Ajustes serão feitos conforme necessidade: seja por uma demanda sua (dificuldade de seguir, mudança de rotina etc.) ou por uma estratégia minha para acelerar seus resultados.</p>
-            </div>
-          </div>
-        </div>
-
-
-        <div>
-          <p className='text-[26px] font-medium text-center'>Planos disponíveis</p>
-          <div className='space-y-4 mt-6 lg:flex lg:space-x-4 lg:justify-center lg:space-y-0'>
-            <div className='border-2 border-neutral-700 rounded-[16px] text-center pb-4 overflow-hidden lg:w-[370px] max-w-[470px] mx-auto lg:mx-0'>
-              <p className='text-[21px] bg-neutral-700 p-2 font-regular text-bgreen'>Trimestral</p>
-              <div className='space-y-2 p-3'>
-                <div className='flex items-center space-x-2'>
-                  <span className='material-symbols-outlined text-[28px] text-verde'>check</span>
-                  <p className='leading-[20px]'>Dieta personalizada</p>
-                </div>
-                <hr className='border-1 border-neutral-700' />
-                <div className='flex items-center space-x-2'>
-                  <span className='material-symbols-outlined text-[28px] text-verde'>check</span>
-                  <p className='leading-[20px]'>Ficha de treino personalizado</p>
-                </div>
-                <hr className='border-1 border-neutral-700' />
-                <div className='flex items-center space-x-2'>
-                  <span className='material-symbols-outlined text-[28px] text-verde'>check</span>
-                  <p className='leading-[20px]'>Atualizações semanais</p>
-                </div>
-                <hr className='border-1 border-neutral-700' />
-                <div className='flex items-center space-x-2'>
-                  <span className='material-symbols-outlined text-[28px] text-red-500'>close</span>
-                  <p className='leading-[20px]'>E-book</p>
-                </div>
-                <hr className='border-1 border-neutral-700' />
-                <div className='flex items-center space-x-2'>
-                  <span className='material-symbols-outlined text-[28px] text-red-500'>close</span>
-                  <p className='leading-[20px]'>Teste</p>
-                </div>
-                <hr className='border-1 border-neutral-700' />
-                <p className='text-[29px] font-regular text-left text-center pt-1.5'>R$299,99</p>
-              </div>
-              <div className='text-center px-3 mt-1'>
-                <button className='buttonHover font-medium bg-verde p-3 w-full rounded-[8px] text-black text-[18px]'>Quero o plano trimestral</button>
-              </div>
-            </div>
-            <div className='border-2 border-neutral-700 rounded-[16px] text-center pb-4 overflow-hidden lg:w-[370px] max-w-[470px] mx-auto lg:mx-0'>
-              <p className='text-[21px] bg-neutral-700 p-2 font-regular text-bgreen'>Semestral</p>
-              <div className='space-y-2 p-3'>
-                <div className='flex items-center space-x-2'>
-                  <span className='material-symbols-outlined text-[28px] text-verde'>check</span>
-                  <p className='leading-[20px]'>Dieta personalizada</p>
-                </div>
-                <hr className='border-1 border-neutral-700' />
-                <div className='flex items-center space-x-2'>
-                  <span className='material-symbols-outlined text-[28px] text-verde'>check</span>
-                  <p className='leading-[20px]'>Ficha de treino personalizado</p>
-                </div>
-                <hr className='border-1 border-neutral-700' />
-                <div className='flex items-center space-x-2'>
-                  <span className='material-symbols-outlined text-[28px] text-verde'>check</span>
-                  <p className='leading-[20px]'>Atualizações semanais</p>
-                </div>
-                <hr className='border-1 border-neutral-700' />
-                <div className='flex items-center space-x-2'>
-                  <span className='material-symbols-outlined text-[28px] text-verde'>check</span>
-                  <p className='leading-[20px]'>E-book</p>
-                </div>
-                <hr className='border-1 border-neutral-700' />
-                <div className='flex items-center space-x-2'>
-                  <span className='material-symbols-outlined text-[28px] text-red-500'>close</span>
-                  <p className='leading-[20px]'>Teste</p>
-                </div>
-                <hr className='border-1 border-neutral-700' />
-                <p className='text-[29px] font-regular text-left text-center pt-1.5'>R$299,99</p>
-              </div>
-              <div className='text-center px-3 mt-1'>
-                <button className='buttonHover font-medium bg-verde p-3 w-full rounded-[8px] text-black text-[18px]'>Quero o plano semestral</button>
-              </div>
-            </div>
-            <div className='border-2 border-neutral-700 rounded-[16px] text-center pb-4 overflow-hidden lg:w-[370px] max-w-[470px] mx-auto lg:mx-0'>
-              <p className='text-[21px] bg-neutral-700 p-2 font-regular text-bgreen'>Anual</p>
-              <div className='space-y-2 p-3'>
-                <div className='flex items-center space-x-2'>
-                  <span className='material-symbols-outlined text-[28px] text-verde'>check</span>
-                  <p className='leading-[20px]'>Dieta personalizada</p>
-                </div>
-                <hr className='border-1 border-neutral-700' />
-                <div className='flex items-center space-x-2'>
-                  <span className='material-symbols-outlined text-[28px] text-verde'>check</span>
-                  <p className='leading-[20px]'>Ficha de treino personalizado</p>
-                </div>
-                <hr className='border-1 border-neutral-700' />
-                <div className='flex items-center space-x-2'>
-                  <span className='material-symbols-outlined text-[28px] text-verde'>check</span>
-                  <p className='leading-[20px]'>Atualizações semanais</p>
-                </div>
-                <hr className='border-1 border-neutral-700' />
-                <div className='flex items-center space-x-2'>
-                  <span className='material-symbols-outlined text-[28px] text-verde'>check</span>
-                  <p className='leading-[20px]'>E-book</p>
-                </div>
-                <hr className='border-1 border-neutral-700' />
-                <div className='flex items-center space-x-2'>
-                  <span className='material-symbols-outlined text-[28px] text-verde'>check</span>
-                  <p className='leading-[20px]'>Teste</p>
-                </div>
-                <hr className='border-1 border-neutral-700' />
-                <p className='text-[29px] font-regular text-left text-center pt-1.5'>R$299,99</p>
-              </div>
-              <div className='text-center px-3 mt-1'>
-                <button className='buttonHover font-medium bg-verde p-3 w-full rounded-[8px] text-black text-[18px]'>Quero o plano anual</button>
-              </div>
             </div>
           </div>
         </div>

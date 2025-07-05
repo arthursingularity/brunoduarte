@@ -253,6 +253,111 @@ function App() {
             </div>
           </div>
         </div>
+
+        <div>
+          <p className='text-[26px] font-medium text-center'>Planos disponíveis</p>
+          <div className='space-y-4 mt-6 lg:flex lg:space-x-4 lg:justify-center lg:space-y-0'>
+            <div className='border-2 border-neutral-700 rounded-[16px] text-center pb-4 overflow-hidden lg:w-[370px] max-w-[470px] mx-auto lg:mx-0'>
+              <p className='text-[21px] bg-neutral-700 p-2 font-regular text-bgreen'>Trimestral</p>
+              <div className='space-y-2 p-3'>
+                <div className='flex items-center space-x-2'>
+                  <span className='material-symbols-outlined text-[28px] text-verde'>check</span>
+                  <p className='leading-[20px]'>Dieta personalizada</p>
+                </div>
+                <hr className='border-1 border-neutral-700' />
+                <div className='flex items-center space-x-2'>
+                  <span className='material-symbols-outlined text-[28px] text-verde'>check</span>
+                  <p className='leading-[20px]'>Ficha de treino personalizado</p>
+                </div>
+                <hr className='border-1 border-neutral-700' />
+                <div className='flex items-center space-x-2'>
+                  <span className='material-symbols-outlined text-[28px] text-verde'>check</span>
+                  <p className='leading-[20px]'>Atualizações semanais</p>
+                </div>
+                <hr className='border-1 border-neutral-700' />
+                <div className='flex items-center space-x-2'>
+                  <span className='material-symbols-outlined text-[28px] text-red-500'>close</span>
+                  <p className='leading-[20px]'>E-book</p>
+                </div>
+                <hr className='border-1 border-neutral-700' />
+                <div className='flex items-center space-x-2'>
+                  <span className='material-symbols-outlined text-[28px] text-red-500'>close</span>
+                  <p className='leading-[20px]'>Teste</p>
+                </div>
+                <hr className='border-1 border-neutral-700' />
+              </div>
+              <div className='text-center px-3 mt-1'>
+                <button className='buttonHover font-medium bg-verde p-3 w-full rounded-[8px] text-black text-[18px]'>Quero o plano trimestral</button>
+              </div>
+            </div>
+            <div className='border-2 border-neutral-700 rounded-[16px] text-center pb-4 overflow-hidden lg:w-[370px] max-w-[470px] mx-auto lg:mx-0'>
+              <p className='text-[21px] bg-neutral-700 p-2 font-regular text-bgreen'>Semestral</p>
+              <div className='space-y-2 p-3'>
+                <div className='flex items-center space-x-2'>
+                  <span className='material-symbols-outlined text-[28px] text-verde'>check</span>
+                  <p className='leading-[20px]'>Dieta personalizada</p>
+                </div>
+                <hr className='border-1 border-neutral-700' />
+                <div className='flex items-center space-x-2'>
+                  <span className='material-symbols-outlined text-[28px] text-verde'>check</span>
+                  <p className='leading-[20px]'>Ficha de treino personalizado</p>
+                </div>
+                <hr className='border-1 border-neutral-700' />
+                <div className='flex items-center space-x-2'>
+                  <span className='material-symbols-outlined text-[28px] text-verde'>check</span>
+                  <p className='leading-[20px]'>Atualizações semanais</p>
+                </div>
+                <hr className='border-1 border-neutral-700' />
+                <div className='flex items-center space-x-2'>
+                  <span className='material-symbols-outlined text-[28px] text-verde'>check</span>
+                  <p className='leading-[20px]'>E-book</p>
+                </div>
+                <hr className='border-1 border-neutral-700' />
+                <div className='flex items-center space-x-2'>
+                  <span className='material-symbols-outlined text-[28px] text-red-500'>close</span>
+                  <p className='leading-[20px]'>Teste</p>
+                </div>
+                <hr className='border-1 border-neutral-700' />
+              </div>
+              <div className='text-center px-3 mt-1'>
+                <button className='buttonHover font-medium bg-verde p-3 w-full rounded-[8px] text-black text-[18px]'>Quero o plano semestral</button>
+              </div>
+            </div>
+            <div className='border-2 border-neutral-700 rounded-[16px] text-center pb-4 overflow-hidden lg:w-[370px] max-w-[470px] mx-auto lg:mx-0'>
+              <p className='text-[21px] bg-neutral-700 p-2 font-regular text-bgreen'>Anual</p>
+              <div className='space-y-2 p-3'>
+                <div className='flex items-center space-x-2'>
+                  <span className='material-symbols-outlined text-[28px] text-verde'>check</span>
+                  <p className='leading-[20px]'>Dieta personalizada</p>
+                </div>
+                <hr className='border-1 border-neutral-700' />
+                <div className='flex items-center space-x-2'>
+                  <span className='material-symbols-outlined text-[28px] text-verde'>check</span>
+                  <p className='leading-[20px]'>Ficha de treino personalizado</p>
+                </div>
+                <hr className='border-1 border-neutral-700' />
+                <div className='flex items-center space-x-2'>
+                  <span className='material-symbols-outlined text-[28px] text-verde'>check</span>
+                  <p className='leading-[20px]'>Atualizações semanais</p>
+                </div>
+                <hr className='border-1 border-neutral-700' />
+                <div className='flex items-center space-x-2'>
+                  <span className='material-symbols-outlined text-[28px] text-verde'>check</span>
+                  <p className='leading-[20px]'>E-book</p>
+                </div>
+                <hr className='border-1 border-neutral-700' />
+                <div className='flex items-center space-x-2'>
+                  <span className='material-symbols-outlined text-[28px] text-verde'>check</span>
+                  <p className='leading-[20px]'>Teste</p>
+                </div>
+                <hr className='border-1 border-neutral-700' />
+              </div>
+              <div className='text-center px-3 mt-1'>
+                <button className='buttonHover font-medium bg-verde p-3 w-full rounded-[8px] text-black text-[18px]'>Quero o plano anual</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className='p-7 xl:py-10 bg-neutral-900 text-white mt-6'>

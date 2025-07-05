@@ -283,6 +283,7 @@ function App() {
                   <p className='leading-[20px]'>Teste</p>
                 </div>
                 <hr className='border-1 border-neutral-700' />
+                <p className='text-[29px] font-regular text-left text-center pt-1.5'>R$299,99</p>
               </div>
               <div className='text-center px-3 mt-1'>
                 <button className='buttonHover font-medium bg-verde p-3 w-full rounded-[8px] text-black text-[18px]'>Quero o plano trimestral</button>
@@ -316,6 +317,7 @@ function App() {
                   <p className='leading-[20px]'>Teste</p>
                 </div>
                 <hr className='border-1 border-neutral-700' />
+                <p className='text-[29px] font-regular text-left text-center pt-1.5'>R$299,99</p>
               </div>
               <div className='text-center px-3 mt-1'>
                 <button className='buttonHover font-medium bg-verde p-3 w-full rounded-[8px] text-black text-[18px]'>Quero o plano semestral</button>
@@ -349,6 +351,7 @@ function App() {
                   <p className='leading-[20px]'>Teste</p>
                 </div>
                 <hr className='border-1 border-neutral-700' />
+                <p className='text-[29px] font-regular text-left text-center pt-1.5'>R$299,99</p>
               </div>
               <div className='text-center px-3 mt-1'>
                 <button className='buttonHover font-medium bg-verde p-3 w-full rounded-[8px] text-black text-[18px]'>Quero o plano anual</button>

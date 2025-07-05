@@ -236,19 +236,19 @@ function App() {
               <div className='text-[15px] p-4 space-y-3 bg-neutral-800 rounded-[16px] border border-neutral-600'>
                 <p className='text-[20px] font-medium text-black bg-bgreen w-[30px] h-[30px] rounded-[8px] flex items-center justify-center'>1</p>
                 <p className='text-[23px] font-medium text-bgreen'>Análise</p>
-                <p className='text-neutral-300'>Após a confirmação do pagamento, você receberá um formulário detalhado onde irá descrever sua rotina, nível de treinamento, preferências alimentares, horários disponíveis, lesões e fotos do seu físico atual.</p>
+                <p className='text-neutral-200'>Após a confirmação do pagamento, você receberá um formulário detalhado onde irá descrever sua rotina, nível de treinamento, preferências alimentares, horários disponíveis, lesões e fotos do seu físico atual.</p>
               </div>
 
               <div className='text-[15px] p-4 space-y-3 bg-neutral-800 rounded-[16px] border border-neutral-600'>
                 <p className='text-[20px] font-medium text-black bg-bgreen w-[30px] h-[30px] rounded-[8px] flex items-center justify-center'>2</p>
                 <p className='text-[23px] font-medium text-bgreen leading-[29px]'>Montagem do seu plano</p>
-                <p className='text-neutral-300'>Com base nas informações recebidas, seu plano será estruturado do zero. Você receberá seu protocolo de dieta e treino em até 5 dias úteis.</p>
+                <p className='text-neutral-200'>Com base nas informações recebidas, seu plano será estruturado do zero. Você receberá seu protocolo de dieta e treino em até 5 dias úteis.</p>
               </div>
 
               <div className='text-[15px] p-4 space-y-3 bg-neutral-800 rounded-[16px] border border-neutral-600'>
                 <p className='text-[20px] font-medium text-black bg-bgreen w-[30px] h-[30px] rounded-[8px] flex items-center justify-center'>3</p>
                 <p className='text-[23px] font-medium text-bgreen'>Acompanhamento</p>
-                <p className='text-neutral-300'>Toda semana seu plano será avaliado. Ajustes serão feitos conforme necessidade: seja por uma demanda sua (dificuldade de seguir, mudança de rotina etc.) ou por uma estratégia minha para acelerar seus resultados.</p>
+                <p className='text-neutral-200'>Toda semana seu plano será avaliado. Ajustes serão feitos conforme necessidade: seja por uma demanda sua (dificuldade de seguir, mudança de rotina etc.) ou por uma estratégia minha para acelerar seus resultados.</p>
               </div>
             </div>
           </div>
@@ -389,7 +389,7 @@ function App() {
                   <p className='text-[22px]'>Meu nome é</p>
                   <p className='text-[28px] text-bgreen font-bold'>BRUNO DUARTE</p>
                 </div>
-                <div className='mt-7 space-y-5 text-neutral-300'>
+                <div className='mt-7 space-y-5 text-neutral-200'>
                   <p>Sou Personal Trainer  com mais de <span className='text-bgreen font-psemibold'>15 anos de experiência</span>, ajudando centenas de mulheres a conquistarem o corpo dos seus sonhos com saúde, foco e disciplina.</p>
                   <p>Graduado em Educação Física e especialista em musculação, emagrecimento e alta performance, meu compromisso é transformar resultados em estilo de vida.</p>
                   <p>Já acompanhei centenas de pessoas, mesmo com rotinas apertadas, e vi de perto o poder da consistência com o <span className='font-psemibold text-white'>acompanhamento certo.</span></p>

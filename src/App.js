@@ -116,14 +116,14 @@ function App() {
               <div className='flex justify-center items-center relative'>
                 <span
                   onClick={prevSlide}
-                  className='material-symbols-outlined bg-bgreen rounded left-0 p-[2px] absolute text-black text-[23px] cursor-pointer hover:brightness-90 transition'
+                  className='material-symbols-outlined bg-neutral-500 rounded left-0 p-[2px] absolute text-bgreen text-[23px] cursor-pointer hover:brightness-90 transition'
                 >
                   arrow_back
                 </span>
                 <p className='text-[20px] text-bgreen font-regular'>{current.nome}</p>
                 <span
                   onClick={nextSlide}
-                  className='material-symbols-outlined bg-bgreen rounded right-0 p-[2px] absolute text-black text-[23px] cursor-pointer hover:brightness-90 transition'
+                  className='material-symbols-outlined bg-neutral-500 rounded right-0 p-[2px] absolute text-bgreen text-[23px] cursor-pointer hover:brightness-90 transition'
                 >
                   arrow_forward
                 </span>
@@ -285,6 +285,7 @@ function App() {
                   <p className='leading-[20px]'>Teste</p>
                 </div>
                 <hr className='border-1 border-neutral-700' />
+                <p className='font-medium text-[27px] pt-2'>R$299,99</p>
               </div>
               <div className='text-center px-3 mt-1'>
                 <button className='buttonHover font-medium bg-verde p-3 w-full rounded-[8px] text-black text-[18px]'>Quero o plano trimestral</button>
@@ -318,6 +319,7 @@ function App() {
                   <p className='leading-[20px]'>Teste</p>
                 </div>
                 <hr className='border-1 border-neutral-700' />
+                <p className='font-medium text-[27px] pt-2'>R$299,99</p>
               </div>
               <div className='text-center px-3 mt-1'>
                 <button className='buttonHover font-medium bg-verde p-3 w-full rounded-[8px] text-black text-[18px]'>Quero o plano semestral</button>
@@ -351,6 +353,7 @@ function App() {
                   <p className='leading-[20px]'>Teste</p>
                 </div>
                 <hr className='border-1 border-neutral-700' />
+                <p className='font-medium text-[27px] pt-2'>R$299,99</p>
               </div>
               <div className='text-center px-3 mt-1'>
                 <button className='buttonHover font-medium bg-verde p-3 w-full rounded-[8px] text-black text-[18px]'>Quero o plano anual</button>

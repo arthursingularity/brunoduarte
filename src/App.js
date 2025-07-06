@@ -282,7 +282,7 @@ function App() {
                 </div>
 
                 <div className='flex justify-center'>
-                  <button className='buttonHover bg-bgreen text-black rounded-[8px] p-3 font-medium w-full'>Saiba mais</button>
+                  <button className='buttonHover bg-bgreen text-black rounded-[8px] p-2 font-regular w-full'>Saiba mais</button>
                 </div>
 
                 <div className='barrinha flex justify-center mt-3'>

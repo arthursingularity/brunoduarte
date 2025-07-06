@@ -65,9 +65,15 @@ function App() {
 
   return (
     <div className='font-light'>
-      <div className='buttonHover bg-green-500 rounded-full p-1.5 fixed z-50 bottom-2 right-2'>
-        <img src='./imagens/whatsapp.svg' className='w-[40px]' />
-      </div>
+      <a
+        href="https://wa.me/553196450850?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20consultoria%20online."
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div className='buttonHover bg-green-500 rounded-full p-1.5 fixed z-50 bottom-2 right-2'>
+          <img src='./imagens/whatsapp.svg' className='w-[40px]' />
+        </div>
+      </a>
 
       <div className='text-white flex justify-center'>
         <div className='text-center p-3 z-10 relative mt-2'>
@@ -469,8 +475,16 @@ function App() {
                   <p>Já acompanhei centenas de pessoas, mesmo com rotinas apertadas, e vi de perto o poder da consistência com o <span className='font-psemibold text-white'>acompanhamento certo.</span></p>
                 </div>
                 <div className='flex space-x-3 mt-7 pb-5'>
-                  <img src='./imagens/instagram.png' className='buttonHover w-[40px]' />
-                  <img src='./imagens/whatsapp.png' className='buttonHover w-[40px]' />
+                  <a href="https://www.instagram.com/brunoduartepersonal" target="_blank" rel="noopener noreferrer">
+                    <img src="./imagens/instagram.png" className="buttonHover w-[40px]" />
+                  </a>
+                  <a
+                    href="https://wa.me/553196450850?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20consultoria%20online."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src="./imagens/whatsapp.png" className="buttonHover w-[40px]" />
+                  </a>
                 </div>
               </div>
             </div>

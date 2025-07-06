@@ -510,8 +510,14 @@ function App() {
           <img src='./imagens/logo.png' className='w-[100px]' />
         </div>
         <p className='text-[15px]'>© Bruno Duarte 2025 - Todos os direitos reservados.</p>
-        <hr className='border-1 border-neutral-700 max-w-[700px] mx-auto' />
-        <p className='text-[13px]'>Desenvolvido por <span className='font-medium'>Arthur Alves</span></p>
+        <hr className='border-1 border-neutral-700 max-w-[700px] mx-auto pb-4' />
+        <a
+          href="https://wa.me/5522988223766"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <p className='text-[13px] buttonHover'>Desenvolvido por <span className='font-medium'>Arthur Alves</span></p>
+        </a>
       </div>
     </div>
   );

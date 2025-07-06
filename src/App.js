@@ -377,7 +377,7 @@ function App() {
                 </div>
                 <p className='font-medium text-[27px] text-left ml-1'>R$107,99 <span className='text-[17px] font-regular text-neutral-300'>/mês</span></p>
                 <div className='text-center pt-3'>
-                  <button className='buttonHover font-medium bg-bgreen text-black p-3 w-full rounded-[6px] text-[18px]'>Quero esse plano</button>
+                  <button className='buttonHover font-medium bg-verde text-black p-3 w-full rounded-[6px] text-[18px]'>Quero esse plano</button>
                 </div>
               </div>
               <div className='space-y-2 p-3 text-neutral-300'>
@@ -415,7 +415,7 @@ function App() {
                 </div>
                 <p className='font-medium text-[27px] text-left ml-1'>R$95,99 <span className='text-[17px] font-regular text-neutral-300'>/mês</span></p>
                 <div className='text-center pt-3'>
-                  <button className='buttonHover font-medium bg-bgreen text-black p-3 w-full rounded-[6px] text-[18px]'>Quero esse plano</button>
+                  <button className='buttonHover font-medium bg-verde text-black p-3 w-full rounded-[6px] text-[18px]'>Quero esse plano</button>
                 </div>
               </div>
               <div className='space-y-2 p-3 text-neutral-200'>

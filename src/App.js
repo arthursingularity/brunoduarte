@@ -1,5 +1,5 @@
 import './App.css';
-import { useState } from 'react';
+import { useState, useRef, React } from 'react';
 
 const slides = [
   {
@@ -26,6 +26,32 @@ const slides = [
 
 function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentVideo, setCurrentVideo] = useState(0);
+  const touchStartX = useRef(null);
+
+  const videos = [
+    './imagens/video2.mp4',
+    './imagens/video1.mp4',
+    './imagens/video3.mp4'
+  ];
+
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = (e) => {
+    if (touchStartX.current === null) return;
+    const touchEndX = e.changedTouches[0].clientX;
+    const diff = touchStartX.current - touchEndX;
+
+    if (diff > 50 && currentVideo < videos.length - 1) {
+      setCurrentVideo((prev) => prev + 1); // swipe para esquerda → avançar
+    } else if (diff < -50 && currentVideo > 0) {
+      setCurrentVideo((prev) => prev - 1); // swipe para direita → voltar
+    }
+
+    touchStartX.current = null;
+  };
 
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % slides.length);
@@ -226,6 +252,54 @@ function App() {
               </div>
             </div>
             <img src='./imagens/principal.png' className='absolute -right-[35px] w-[350px] mt-3' />
+          </div>
+        </div>
+
+        <div>
+          <p className='text-[28px] font-medium text-center leading-[31px]'>Maximize os seus resultados</p>
+          <div
+            className='max-w-[350px] h-[430px] mx-auto overflow-hidden relative mt-6 rounded-[16px] border border-neutral-600'
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd}
+          >
+            <div className='flex items-center justify-center h-full relative'>
+              {videos.map((src, index) => (
+                <video
+                  key={index}
+                  src={src}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className={`w-full h-full absolute top-0 object-cover scale-[100%] brightness-[25%] transition-opacity duration-500 ${index === currentVideo ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+                />
+              ))}
+
+              <div className='absolute z-10 bottom-0 w-full p-3'>
+                <div className='pb-5 space-y-1'>
+                  <p className='font-medium text-[24px] text-bgreen'>Dicas de treino</p>
+                  <p className='leading-[20px] text-neutral-300'>Vídeos explicativos com dicas de treino para melhorar as suas rotinas.</p>
+                </div>
+
+                <div className='flex justify-center'>
+                  <button className='buttonHover bg-bgreen text-black rounded-[8px] p-3 font-medium w-full'>Saiba mais</button>
+                </div>
+
+                <div className='barrinha flex justify-center mt-3'>
+                  <div className='h-[15px] p-1.5 px-10 bg-neutral-700 rounded-full flex justify-center items-center space-x-1.5'>
+                    {videos.map((_, index) => (
+                      <div
+                        key={index}
+                        className={`rounded-full transition-all duration-300 ${index === currentVideo
+                          ? 'bg-white w-[17px] h-[7px]'
+                          : 'bg-neutral-400 w-[7px] h-[7px]'
+                          }`}
+                      ></div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 

@@ -3,24 +3,29 @@ import { useState, useRef, React } from 'react';
 
 const slides = [
   {
-    nome: 'Gabriela Silva',
-    antes: '/imagens/cbumantes.jpg',
-    depois: '/imagens/cbumdepois.jpg',
+    nome: 'p3',
+    antes: '/imagens/p3-1.jpeg',
+    depois: '/imagens/p3-2.jpeg',
   },
   {
-    nome: 'Luana Machado',
-    antes: '/imagens/cbumante.jpg',
-    depois: '/imagens/cbumdepoi.jpg',
+    nome: 'p1',
+    antes: '/imagens/p1-1.jpeg',
+    depois: '/imagens/p1-2.jpeg',
   },
   {
-    nome: 'Amanda Rocha',
-    antes: '/imagens/cbumante.jpg',
-    depois: '/imagens/cbumdepoi.jpg',
+    nome: 'p2',
+    antes: '/imagens/p2-1.jpeg',
+    depois: '/imagens/p2-2.jpeg',
   },
   {
-    nome: 'Carla Nunes',
-    antes: '/imagens/cbumante.jpg',
-    depois: '/imagens/cbumdepoi.jpg',
+    nome: 'p4',
+    antes: '/imagens/p4-1.jpeg',
+    depois: '/imagens/p4-2.jpeg',
+  },
+  {
+    nome: 'p5',
+    antes: '/imagens/p5-1.jpeg',
+    depois: '/imagens/p5-2.jpeg',
   },
 ];
 
@@ -145,25 +150,15 @@ function App() {
           </div>
           <div className='text-center relative bg-neutral-800 rounded-[16px] overflow-hidden p-3 space-y-7 mt-8 max-w-[400px] mx-auto xl:max-w-[700px]'>
             <div className='bg-neutral-700 relative rounded-[8px] p-2 mx-auto'>
-              <div className='flex justify-center items-center relative'>
-                <span
-                  onClick={prevSlide}
-                  className='material-symbols-outlined bg-neutral-500 rounded left-0 p-[2px] absolute text-bgreen text-[23px] cursor-pointer hover:brightness-90 transition'
-                >
-                  arrow_back
-                </span>
-                <p className='text-[20px] text-bgreen font-regular'>{current.nome}</p>
-                <span
-                  onClick={nextSlide}
-                  className='material-symbols-outlined bg-neutral-500 rounded right-0 p-[2px] absolute text-bgreen text-[23px] cursor-pointer hover:brightness-90 transition'
-                >
-                  arrow_forward
-                </span>
-              </div>
-
-              <div className='flex justify-center space-x-3 mt-4'>
+              <div className='flex justify-center space-x-2 mt-0 relative'>
                 <div className='w-full border border-neutral-500 rounded-[6px] relative overflow-hidden'>
                   <div className='relative w-full h-auto max-h-[460px] bg-neutral-500 overflow-hidden flex justify-center items-center'>
+                    <span
+                      onClick={prevSlide}
+                      className='material-symbols-outlined z-20 left-1 bg-neutral-500 rounded p-[2px] absolute text-bgreen text-[23px] cursor-pointer hover:brightness-90 transition'
+                    >
+                      arrow_back
+                    </span>
                     <img
                       src='./imagens/logo.png'
                       className='absolute w-10 right-[2px] bottom-[2px] z-10'
@@ -180,6 +175,12 @@ function App() {
 
                 <div className='w-full border border-neutral-500 rounded-[6px] relative overflow-hidden'>
                   <div className='relative w-full h-auto max-h-[460px] bg-neutral-500 rounded-t-[6px] overflow-hidden flex justify-center items-center'>
+                    <span
+                      onClick={nextSlide}
+                      className='material-symbols-outlined z-20 right-1 bg-neutral-500 rounded p-[2px] absolute text-bgreen text-[23px] cursor-pointer hover:brightness-90 transition'
+                    >
+                      arrow_forward
+                    </span>
                     <img
                       src='./imagens/logo.png'
                       className='absolute w-10 right-[2px] bottom-[2px] z-10'
@@ -192,6 +193,10 @@ function App() {
                     />
                   </div>
                   <p className='bg-neutral-500 p-1 py-1.5 text-center font-medium text-[15px]'>Depois</p>
+                </div>
+                <div className='absolute z-50'>
+
+
                 </div>
               </div>
             </div>

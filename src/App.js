@@ -29,8 +29,28 @@ const slides = [
   },
 ];
 
+const prints = [
+  {
+    nome: 'p3',
+    antes: '/imagens/p3-1.jpeg',
+  },
+  {
+    nome: 'p3',
+    antes: '/imagens/p3-2.jpeg',
+  },
+  {
+    nome: 'p1',
+    antes: '/imagens/p1-1.jpeg',
+  },
+  {
+    nome: 'p1',
+    antes: '/imagens/p1-2.jpeg',
+  },
+];
+
 function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex2, setCurrentIndex2] = useState(0);
   const [currentVideo, setCurrentVideo] = useState(0);
   const touchStartX = useRef(null);
 
@@ -66,6 +86,15 @@ function App() {
     setCurrentIndex((prev) => (prev - 1 + slides.length) % slides.length);
   };
 
+  const nextSlide2 = () => {
+    setCurrentIndex2((prev) => (prev + 1) % prints.length);
+  };
+
+  const prevSlide2 = () => {
+    setCurrentIndex2((prev) => (prev - 1 + prints.length) % prints.length);
+  };
+
+  const current2 = prints[currentIndex2];
   const current = slides[currentIndex];
 
   return (
@@ -195,8 +224,6 @@ function App() {
                   <p className='bg-neutral-500 p-1 py-1.5 text-center font-medium text-[15px]'>Depois</p>
                 </div>
                 <div className='absolute z-50'>
-
-
                 </div>
               </div>
             </div>
@@ -214,18 +241,40 @@ function App() {
             <p className='text-[32px] font-medium text-bgreen text-center'>Trabalho SÉRIO,</p>
             <p className='text-[21px] text-center'>Método que <span className='font-medium'>FUNCIONA.</span></p>
           </div>
-          <div className='mt-7 space-y-3'>
-            <div className='flex justify-center space-x-3'>
-              <div className='bg-neutral-700 w-[170px] h-[170px] rounded-[8px] flex justify-center items-center'>Print</div>
-              <div className='bg-neutral-700 w-[170px] h-[170px] rounded-[8px] flex justify-center items-center'>Print</div>
-            </div>
-            <div className='flex justify-center space-x-3'>
-              <div className='bg-neutral-700 w-[170px] h-[170px] rounded-[8px] flex justify-center items-center'>Print</div>
-              <div className='bg-neutral-700 w-[170px] h-[170px] rounded-[8px] flex justify-center items-center'>Print</div>
-            </div>
-            <div className='flex justify-center space-x-3'>
-              <div className='bg-neutral-700 w-[170px] h-[170px] rounded-[8px] flex justify-center items-center'>Print</div>
-              <div className='bg-neutral-700 w-[170px] h-[170px] rounded-[8px] flex justify-center items-center'>Print</div>
+          <div className='text-center relative bg-neutral-800 rounded-[16px] overflow-hidden p-3 mt-8 max-w-[400px] mx-auto xl:max-w-[700px]'>
+            <p className="text-[25px] mt-2">Conversas <span className='font-medium text-bgreen'>reais</span></p>
+            <div className='bg-neutral-700 relative rounded-[8px] p-2 mx-auto mt-5'>
+              <div className='flex justify-center space-x-2 mt-0 relative'>
+                <div className='w-full border border-neutral-500 rounded-[6px] relative overflow-hidden'>
+                  <div className='relative w-full max-h-[380px] xl:max-h-[580px] bg-neutral-500 overflow-hidden flex justify-center items-center'>
+                    <span
+                      onClick={prevSlide2}
+                      className='material-symbols-outlined z-20 left-1 bg-neutral-500 rounded p-[2px] absolute text-bgreen text-[23px] cursor-pointer hover:brightness-90 transition'
+                    >
+                      arrow_back
+                    </span>
+                    <span
+                      onClick={nextSlide2}
+                      className='material-symbols-outlined z-20 right-1 bg-neutral-500 rounded p-[2px] absolute text-bgreen text-[23px] cursor-pointer hover:brightness-90 transition'
+                    >
+                      arrow_forward
+                    </span>
+                    <img
+                      src='./imagens/logo.png'
+                      className='absolute w-10 right-[2px] bottom-[2px] z-10'
+                      alt='Logo'
+                    />
+                    <img
+                      src={current2.antes}
+                      className='w-full h-full object-cover'
+                      alt='Antes'
+                    />
+                  </div>
+                  <p className='bg-neutral-500 p-1 py-1.5 text-center font-medium text-[15px]'>Antes</p>
+                </div>
+                <div className='absolute z-50'>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -8,6 +8,7 @@ function Formulario() {
     const steps = [
         [
             "Nome completo",
+            "Rede social(ex: @bruno - instagram)",
             "Email",
             "Telefone",
             "Data de nascimento",
@@ -16,15 +17,16 @@ function Formulario() {
             "FC repouso",
             "Peso",
             "Altura",
+            "Como chegou até a mim ou minha consultoria?",
             "O que você espera com a consultoria online?",
             "Qual é o seu objetivo principal? Se há mais de um, cite-os",
-            "Profissão",
         ],
         [
             "Onde pretende treinar?",
-            "Possui equipamentos em casa? Quais",
-            "Quantos dias por semana e quantas horas por dia você se propõe a treinar?",
-            "Pratica atividade física? Se sim, qual/quais?",
+            "Se na resposta anterior você disse casa ou academia de condomínio, quais equipamentos ou aparelhos você possui?",
+            "Quantos dias por semana você pode treinar?",
+            "Quantos horas por dia você pode treinar?",
+            "Pratica atividades físicas? Se sim, qual/quais?",
             "A quanto tempo pratica?",
             "Caso tenha parado a prática, a quanto tempo está parado(a)?",
             "Existe alguma parte do seu corpo que o/a incomoda esteticamente? Se sim, qual ou quais?",
@@ -44,11 +46,13 @@ function Formulario() {
             "Durante a prática de exercícios, alguma vez já sentiu tonteira?",
         ],
         [
-            "Pratica atividade física?",
-            "Quantas horas de sono?",
-            "Nível de estresse",
-            "Alimentação diária",
-            "Objetivo do atendimento",
+            "Você se considera ectomorfo, mesomorfo ou endomorfo?",
+            "Fez alguma cirurgia? Qual?",
+            "Possui dores na coluna, articulações ou dores musculares?",
+            "Tem alguma recomendação médica para a prática de atividade física?",
+            "Foi uma criança ou adolescente com sobrepeso?",
+            "Seus pais são obesos ou têm sobrepeso?",
+            "Observações e comentários",
         ],
     ];
 

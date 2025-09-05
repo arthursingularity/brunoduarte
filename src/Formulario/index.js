@@ -8,10 +8,17 @@ function Formulario() {
     const steps = [
         [
             "Nome completo",
-            "Idade",
-            "E-mail",
+            "Email",
             "Telefone",
+            "Data de nascimento",
             "Endereço",
+            "Profissão",
+            "FC repouso",
+            "Peso",
+            "Altura",
+            "O que você espera com a consultoria online?",
+            "Qual é o seu objetivo principal? Se há mais de um, cite-os",
+            "Profissão",
         ],
         [
             "Altura",

@@ -29,6 +29,7 @@ function Formulario() {
             "Já pratica atividades físicas? Se sim, qual/quais?",
             "Ha quanto tempo pratica?",
             "Caso tenha parado a prática, a quanto tempo está parado(a)?",
+            "Se você treina atualmente, me fale um pouco sobre seu treino(tipo de divisão, número de exercícios por dia e etc).",
             "Existe alguma parte do seu corpo que o/a incomoda esteticamente? Se sim, qual ou quais?",
             "Pela sua percepção, você acha que ganha massa muscular facilmente?",
             "Faz quantas refeições por dia?",
@@ -46,7 +47,7 @@ function Formulario() {
             "Durante a prática de exercícios, alguma vez já sentiu tonteira?",
         ],
         [
-            "Você se considera ectomorfo, mesomorfo ou endomorfo?",
+            "Pratica outra atividade física? Se sim, qual e com que frequência?",
             "Fez alguma cirurgia? Qual?",
             "Possui dores na coluna, articulações ou dores musculares?",
             "Tem alguma recomendação médica para a prática de atividade física?",

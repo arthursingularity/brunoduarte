@@ -26,7 +26,7 @@ function Formulario() {
             "Se na resposta anterior você disse casa ou academia de condomínio, quais equipamentos ou aparelhos você possui?",
             "Quantos dias por semana você pode treinar?",
             "Quantos horas por dia você pode treinar?",
-            "Já pratica atividades físicas? Se sim, qual/quais?",
+            "Você já pratica musculação?",
             "Ha quanto tempo pratica?",
             "Caso tenha parado a prática, a quanto tempo está parado(a)?",
             "Se você treina atualmente, me fale um pouco sobre seu treino(tipo de divisão, número de exercícios por dia e etc).",

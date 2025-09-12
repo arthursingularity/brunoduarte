@@ -65,11 +65,19 @@ function Formulario() {
     };
 
     const handleNext = () => {
+        // Pega os campos da etapa atual
+        const currentStepFields = steps[step - 1];
+    
+        // Verifica se algum está vazio
+        const hasEmptyField = currentStepFields.some(label => !answers[label] || answers[label].trim() === "");
+    
+        if (hasEmptyField) {
+            alert("Por favor, preencha todos os campos obrigatórios antes de continuar.");
+            return; // não avança
+        }
+    
         if (step < totalSteps) {
             setStep(step + 1);
-        } else {
-            // Ação final do formulário
-            alert("Formulário finalizado! 🎉");
         }
     };
 
@@ -78,24 +86,33 @@ function Formulario() {
     };
 
     const handleSubmit = () => {
+        // Garante que todos os campos de todas as etapas foram preenchidos
+        const allFields = steps.flat();
+        const hasEmptyField = allFields.some(label => !answers[label] || answers[label].trim() === "");
+    
+        if (hasEmptyField) {
+            alert("Por favor, preencha todos os campos antes de enviar o formulário.");
+            return;
+        }
+    
         const nomeCompleto = answers["Nome completo"] || "Sem nome";
         const message = Object.entries(answers)
             .map(([pergunta, resposta]) => `<b>${pergunta}:</b> ${resposta}<br><br>`)
             .join("");
-
+    
         const templateParams = {
             to_email: "brunoassispersonal@gmail.com",
             subject: `Ficha - (${nomeCompleto})`,
             message: message,
             name: nomeCompleto,
         };
-
+    
         emailjs
             .send(
-                "service_6oz7wms",   // seu SERVICE_ID
-                "template_pqmznwk",  // seu TEMPLATE_ID
+                "service_6oz7wms",
+                "template_pqmznwk",
                 templateParams,
-                "NrYw_EiFWBGHgsaVH" // sua PUBLIC_KEY
+                "NrYw_EiFWBGHgsaVH"
             )
             .then(() => {
                 alert("Formulário enviado com sucesso! 🎉");
@@ -105,7 +122,7 @@ function Formulario() {
                 console.error(err);
                 alert("Ocorreu um erro ao enviar.");
             });
-    };
+    };    
 
     const progressWidth = `${(step / totalSteps) * 100}%`;
 

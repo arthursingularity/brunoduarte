@@ -51,7 +51,7 @@ function Formulario() {
             "Pratica outra atividade física? Se sim, qual e com que frequência?",
             "Fez alguma cirurgia? Qual?",
             "Possui dores na coluna, articulações ou dores musculares?",
-            "Tem alguma recomendação médica para a prática de atividade física?",
+            "Tem alguma recomendação médica para a prática de atividade física? Se sim, qual?",
             "Foi uma criança ou adolescente com sobrepeso?",
             "Seus pais são obesos ou têm sobrepeso?",
             "Observações e comentários",

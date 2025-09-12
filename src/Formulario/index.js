@@ -1,4 +1,5 @@
 import { useState } from "react";
+import emailjs from "emailjs-com";
 
 function Formulario() {
     const [step, setStep] = useState(1); // etapa atual
@@ -57,6 +58,12 @@ function Formulario() {
         ],
     ];
 
+    const [answers, setAnswers] = useState({});
+
+    const handleChange = (label, value) => {
+        setAnswers(prev => ({ ...prev, [label]: value }));
+    };
+
     const handleNext = () => {
         if (step < totalSteps) {
             setStep(step + 1);
@@ -68,6 +75,35 @@ function Formulario() {
 
     const handlePrev = () => {
         if (step > 1) setStep(step - 1);
+    };
+
+    const handleSubmit = () => {
+        const nomeCompleto = answers["Nome completo"] || "Sem nome";
+        const message = Object.entries(answers)
+            .map(([pergunta, resposta]) => `<b>${pergunta}:</b> ${resposta}<br><br>`)
+            .join("");
+
+        const templateParams = {
+            to_email: "arthur.1234.5678.alves@gmail.com",
+            subject: `Ficha - (${nomeCompleto})`,
+            message: message,
+            name: nomeCompleto,
+        };
+
+        emailjs
+            .send(
+                "service_4p5l46l",   // seu SERVICE_ID
+                "template_rkw71em",  // seu TEMPLATE_ID
+                templateParams,
+                "Yo9XaosCu9-QZAWfU" // sua PUBLIC_KEY
+            )
+            .then(() => {
+                alert("Formulário enviado com sucesso! 🎉");
+            })
+            .catch((err) => {
+                console.error(err);
+                alert("Ocorreu um erro ao enviar.");
+            });
     };
 
     const progressWidth = `${(step / totalSteps) * 100}%`;
@@ -102,6 +138,8 @@ function Formulario() {
                                 <div key={index} className="flex flex-col space-y-1">
                                     <p>{label}</p>
                                     <input
+                                        value={answers[label] || ""}
+                                        onChange={(e) => handleChange(label, e.target.value)}
                                         className="bg-transparent border border-neutral-300 rounded h-[43px] caret-bgreen pl-2 outline-none hover:border-bgreen"
                                     />
                                 </div>
@@ -124,7 +162,7 @@ function Formulario() {
 
                             <button
                                 type="button"
-                                onClick={handleNext}
+                                onClick={step === totalSteps ? handleSubmit : handleNext}
                                 className="buttonHover px-6 py-2 rounded text-black text-[18px] font-medium bg-verde"
                             >
                                 {step === totalSteps ? "Finalizar" : "Próximo"}

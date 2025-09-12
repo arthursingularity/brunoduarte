@@ -84,7 +84,7 @@ function Formulario() {
             .join("");
 
         const templateParams = {
-            to_email: "arthur.1234.5678.alves@gmail.com",
+            to_email: "brunoassispersonal@gmail.com",
             subject: `Ficha - (${nomeCompleto})`,
             message: message,
             name: nomeCompleto,
@@ -92,10 +92,10 @@ function Formulario() {
 
         emailjs
             .send(
-                "service_4p5l46l",   // seu SERVICE_ID
-                "template_rkw71em",  // seu TEMPLATE_ID
+                "service_6oz7wms",   // seu SERVICE_ID
+                "template_pqmznwk",  // seu TEMPLATE_ID
                 templateParams,
-                "Yo9XaosCu9-QZAWfU" // sua PUBLIC_KEY
+                "NrYw_EiFWBGHgsaVH" // sua PUBLIC_KEY
             )
             .then(() => {
                 alert("Formulário enviado com sucesso! 🎉");

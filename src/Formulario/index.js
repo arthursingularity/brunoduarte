@@ -99,6 +99,7 @@ function Formulario() {
             )
             .then(() => {
                 alert("Formulário enviado com sucesso! 🎉");
+                window.location.reload();
             })
             .catch((err) => {
                 console.error(err);
